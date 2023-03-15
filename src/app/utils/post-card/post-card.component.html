@@ -1,0 +1,38 @@
+<!-- <div class="container-fluid">
+<div class="card">
+    <img src="/assets/images/card1.jpg">
+    <div class="card-body">
+        <small class="bg-light text-danger text-center">Design</small>
+        <small class="bg-light text-success text-center">Featured</small>
+        <small class="bg-light text-info text-center">Views-110</small>
+
+        <h5 class="mt-1">WHAT TO DO FOR LATE PERIODS?</h5>
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit praesentium vero ipsam perspiciatis in, exercitationem beatae et maxime quas molestiae iure provident voluptatum cumque repellat blanditiis, excepturi ab autem officia.</P>
+        <small class="bg-light text-warning text-center ml-3">Last Updated=Sep 20,2022</small>
+    </div>
+</div>
+</div> -->
+
+<!-- <div style="background-image: url('/assets/images/bg.jpg');" class=""> -->
+    <div class="row row">
+      <div  class="col cols-4" *ngFor="let data of database" >
+  <br>
+        <div style="margin-left: 10px;" class="wrapper">
+          <div class="card front-face">
+            <img src="/assets/images/card1.jpg" alt="Flip Card">
+            <h3 style="text-align: center;">ggggggg</h3>
+       
+          </div>
+          <div class="card back-face">
+            <img src="{{data.pic}}" alt="Flip Card">
+            <div class="info">
+              <h4>Author:</h4>
+              <h4>Published On:</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing egghbbbjbjjjhjh</p>
+            </div>
+            <a ><button type="button" class="btn btn-outline-info">View Blog</button></a>
+          </div>
+          
+        </div>
+      </div>
+   

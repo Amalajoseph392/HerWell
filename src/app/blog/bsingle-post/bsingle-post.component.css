@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+
+
+
+
+small{
+    padding:8px;
+}
+
+.main{
+    margin-top: -43px;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: black;
+
+}
+h1{
+    color: #596392;
+}
+small{
+    color:#d81337;
+}

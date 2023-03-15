@@ -1,0 +1,58 @@
+<div class="catnav mb-3" style="margin-top: 100px;" >
+  <app-cat-navbar></app-cat-navbar>
+
+</div>
+
+<div style="background-color: rgb(233, 233, 233);" class="main">
+  
+  
+
+    <br><br>
+    <div  class="container mt-5 ">
+    
+     <div class="title">
+    
+        <div class="bottom-container">
+        TO A POSTPARTUM MOM?...
+        </div>
+        
+        <div class="top-container">
+          TO A POSTPARTUM MOM?...
+          
+        </div>
+        </div>
+        
+     <div class="row row">
+      
+          <div  class="col cols-3 md-4"  *ngFor="let data of post" >
+    
+            <div style="margin-left: 50px; margin-top:13px;" class="wrapper mb-5">
+              <div class="card front-face">
+                <img src="{{data.img}}" alt="Flip Card" style= "width:320px; height:350px">
+                <h4 style="text-align: center; font-family:'Nunito', 'sans-serif'; color: black;">{{data.title}}</h4>
+           
+              </div>
+              <div class="card back-face">
+                <img src="{{data.pic}}" alt="Flip Card">
+                <div class="info">
+                  <h4>Author:{{data.author}}</h4>
+                  <h4>Published On:{{data.date}}</h4>
+                  <p>{{data.short}}</p>
+                </div>
+                <a (click)="gotoHere(data.title,data.cat)"><button type="button" class="btn btn-outline" style="background-color: pink;">View Blog</button></a>
+              </div>
+              
+            </div>
+          </div>
+       
+            </div>
+    </div>
+    </div>
+    
+    
+    
+            
+    
+    
+       
+    

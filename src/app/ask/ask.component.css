@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@600&family=Poppins&family=Roboto&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/sweetalert2@11');
+
+
+*{
+    margin-top: -5px; 
+   padding: 0;
+   font-family: 'josefin sans',sans-serif;
+    width:100%;
+}
+
+
+
+.image-1{
+   padding-bottom: 30px;
+   /* width: 204vh; */
+    height: 150vh;   
+    background-image: url(/assets/images/bghome.jpg);
+
+   background-attachment:fixed;
+   background-size:contain;
+   background-repeat: no-repeat;
+   background-position:right; 
+   margin-right: 50px;
+   
+
+}
+
+.image-1 h1{
+   position:relative;
+   top:60px;
+   text-align: left;
+   font-family: 'Playfair Display', serif;
+
+   font-size: 4em;
+   color:rgb(53, 52, 52) ;
+}
+
+
+.card{
+    background-color: var(--navbar-footer-color);
+   
+    
+}
+
+.form-group{
+   
+    padding:5px;
+    
+}
+.btn{
+    background-color:#EE8FBC;
+    width: 100px;
+    margin-left: 210px;
+    color: white;
+    
+}
+.main{
+   
+    width: 600px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+
+
+
+
+.title{
+    
+    margin-top:30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: .5vh;
+    height: 20px;;
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+  }
+  
+  .bottom-container,
+  .top-container {
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: absolute;
+    top: -vh;
+    left: 25vw;
+    padding: 1vw;
+  }
+  
+  .bottom-container {
+    color: #232323;
+    font-size: 30px;
+  }
+  
+  .top-container {
+    background-color: pink;
+    color: white;
+    font-size: 30px;
+  
+    clip-path: circle(5% at 85% 50%);
+    animation: circleMove 10s ease-in-out infinite;
+  }
+  @keyframes  circleMove {
+    0%, 10% {
+      clip-path: circle(5% at 85% 50%);
+    }
+    50% {
+      clip-path: circle(5% at 15% 50%);
+    }
+  }
+
+  
+
+  /* Acordion Faq */
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #000000;
+    overflow: hidden;
+    font-family:  'Poppins', sans-serif;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #000;
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    font-size: larger;
+    font-family:  'Poppins', sans-serif;
+  }
+  
+  .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+    color: #000;
+  }
+  
+  .tab-content p {
+    margin: 1em;
+  }
+  /* :checked */
+  input:checked ~ .tab-content {
+    max-height: 100%;
+  }
+  /* Icon */
+  label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  input[type=checkbox] + label::after {
+    content: "+";
+  }
+  input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
+  

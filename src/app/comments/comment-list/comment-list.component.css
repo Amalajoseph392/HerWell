@@ -1,0 +1,11 @@
+a{
+    padding:8px;
+}
+a:hover{
+    color: black;
+}
+
+.comment-box{
+    padding: 15px 35px;
+    background-color: var(--navbar-footer-color);
+}

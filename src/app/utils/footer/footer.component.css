@@ -1,0 +1,32 @@
+footer{
+    margin-top:100vh;
+    height: 130px; 
+    background-color:var(--navbar-footer-color);
+    
+}
+
+.site-logo{
+    padding: 5px 20px;
+    font-size: 18px;
+    
+
+
+}
+span{
+    color:var(--primary-color);
+}
+.logo{
+    text-align: center;
+}
+.nav{
+    text-align: center;
+
+}
+a{
+    color:#EE8FBC;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover{
+    color:rgb(75, 77, 78);
+}

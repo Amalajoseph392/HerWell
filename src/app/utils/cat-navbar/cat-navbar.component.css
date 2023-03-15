@@ -1,0 +1,16 @@
+nav{
+    height: 50px;
+    background-color: var(--navbar-footer-color);
+}
+a{
+    color:#EE8FBC;
+    font-size: 18px;
+    font-family:sans-serif;
+}
+a:hover{
+    color:rgb(75, 77, 78);
+}
+.cat-nav{
+    margin-top: -15vh;
+
+}
