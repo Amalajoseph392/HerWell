@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "miniproject-acb22": {
+      "hosting": {
+        "herwell": [
+          "miniproject-acb22"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "miniproject-acb22"
+  }
+}
