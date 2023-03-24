@@ -1,0 +1,11 @@
+<form #form="ngForm" (ngSubmit)="login(form.value)">
+    <h3>Welcome Back!</h3> 
+    <label for="username">Username</label>
+    <input type="text"  placeholder="Enter your Email" id="name" name="email" ngModel />
+    <label for="password">Password</label>
+    <input type="password" placeholder="Enter your Password" id="password" name="password" ngModel />
+
+    <button style="border-radius: 10px;color: #000;">Login</button><br><br>
+	<p style="text-align: center;">New User?<br><a style="text-decoration: none;" routerLink="/signup"><span style="color: rgb(255, 255, 255);">Signup Here</span></a></p>
+
+  </form>

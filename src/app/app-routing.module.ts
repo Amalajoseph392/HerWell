@@ -12,6 +12,8 @@ import { PcodComponent } from './pcod/pcod.component';
 import { Home1Component } from './home1/home1.component';
 import { AskComponent } from './ask/ask.component';
 import { ContactComponent } from './contact/contact.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [{
 //   path:'',component:HomeComponent
@@ -57,8 +59,12 @@ const routes: Routes = [{
 {
   path:'contact',component:ContactComponent
 },
-
-
+{
+  path:'signup',component:SignupComponent
+},
+{
+  path:'login',component:LoginComponent
+},
 
 
 ];

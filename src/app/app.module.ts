@@ -21,6 +21,14 @@ import { PcodComponent } from './pcod/pcod.component';
 import { ContactComponent } from './contact/contact.component';
 import { Home1Component } from './home1/home1.component';
 import { AskComponent } from './ask/ask.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,11 +51,19 @@ import { AskComponent } from './ask/ask.component';
     PcodComponent,
     ContactComponent,
     Home1Component,
-    AskComponent
+    AskComponent,
+    SignupComponent,
+    LoginComponent,
+   
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
 
   ],
   providers: [],

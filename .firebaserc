@@ -6,9 +6,16 @@
           "miniproject-acb22"
         ]
       }
+    },
+    "herwell": {
+      "hosting": {
+        "herwell": [
+          "herwell"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "miniproject-acb22"
+    "default": "herwell"
   }
 }

@@ -30,10 +30,10 @@
     
                 <div class="form-group">
                   
-                    <textarea cols="30" rows="10" class="form-control" placeholder="ASK YOUR DOUBTS. WE NEVER ASK YOUR IDENTITY" shadow-effect></textarea>
+                    <textarea type="text" [(ngModel)]="ques" name="ques" cols="30" rows="10" class="form-control" placeholder="ASK YOUR DOUBTS. WE NEVER ASK YOUR IDENTITY" shadow-effect></textarea>
                 </div>
     
-                <button class="btn">SUBMIT</button>
+                <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
             </form>
         </div>
     </div>

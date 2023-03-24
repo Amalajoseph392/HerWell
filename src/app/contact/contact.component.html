@@ -24,18 +24,18 @@
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
         <p>Keep touch with us . Never hesitate to ask your doubts, we are always ready to help you out.</p>
-      <form action="#">
+      <form>
         <div class="input-box">
-          <input type="text" placeholder="Enter your name">
+          <input type="text" [(ngModel)]="name"   name="name" placeholder="Enter your name">
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Enter your email">
+          <input type="text" [(ngModel)]="email"   name="email" placeholder="Enter your email">
         </div>
         <div class="input-box message-box">
-            <input type="text" placeholder="Enter your message">
+            <input type="text"  [(ngModel)]="message"  name="message" placeholder="Enter your message">
         </div>
         <div class="button">
-          <input type="button" value="Send Now" >
+          <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
         </div>
       </form>
     </div>

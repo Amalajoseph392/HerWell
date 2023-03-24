@@ -104,8 +104,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "herwell:build:production",
-            "firebaseProject": "miniproject-acb22",
-            "firebaseHostingSite": "miniproject-acb22"
+            "firebaseProject": "herwell",
+            "firebaseHostingSite": "herwell"
           }
         }
       }
